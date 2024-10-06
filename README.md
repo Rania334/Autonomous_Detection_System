@@ -33,3 +33,9 @@ Before you begin, ensure you have the following installed:
   ```bash
   pip install tensorflow
 
+## Download the Trained Model
+To use the YOLO model for object detection, you need to download the pre-trained model (bestcone.pt).
+
+Download the trained YOLO model from the following link:
+[Download Trained Model](https://drive.google.com/file/d/10MSY-K8sMaXu0xdKcFZHxpcTRBHfAB9G/view?usp=sharing)
+
