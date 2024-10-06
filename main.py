@@ -10,7 +10,7 @@ import time
 from ultralytics import YOLO
 
 tf.config.experimental.set_visible_devices([], 'GPU')
-model = YOLO("/home/rania/test/bestcone.pt")
+model = YOLO("bestcone.pt")
 
 class_names = {
     1: "Human",
@@ -94,7 +94,7 @@ def main():
     rospy.init_node("video_viewer", anonymous=True)
 
     # Load the detection model
-    model_path = r'/home/rania/SVU_RT/faster_rcnn_inception_v2_coco_2018_01_28/frozen_inference_graph.pb'
+    model_path = r'faster_rcnn_inception_v2_coco_2018_01_28/frozen_inference_graph.pb'
     
     global sess, image_tensor, detection_boxes, detection_scores, detection_classes, num_detections, threshold
     sess, image_tensor, detection_boxes, detection_scores, detection_classes, num_detections = load_model(model_path)
